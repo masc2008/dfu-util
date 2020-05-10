@@ -19,3 +19,5 @@ src/dfu-util
 src/dfu-version.h
 stamp-h1
 www/Makefile
+*.swp
+*.swo

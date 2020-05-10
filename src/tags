@@ -1,0 +1,456 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/missing aclocal-1.15$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_CFLAGS	Makefile	/^AM_CFLAGS = -Wall -Wextra$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 0$/;"	m
+AM_V_CC	Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/missing autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/missing autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/missing automake-1.15$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+CC	Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2 -I\/usr\/include\/libusb-1.0$/;"	m
+COMPILE	Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+DEFAULT_INCLUDES	Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_POLLTIMEOUT	quirks.h	32;"	d
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DFUSE_ERASABLE	dfuse_mem.h	25;"	d
+DFUSE_H	dfuse.h	22;"	d
+DFUSE_MEM_H	dfuse_mem.h	22;"	d
+DFUSE_READABLE	dfuse_mem.h	24;"	d
+DFUSE_WRITEABLE	dfuse_mem.h	26;"	d
+DFU_ABORT	dfu.h	66;"	d
+DFU_CLRSTATUS	dfu.h	64;"	d
+DFU_DETACH	dfu.h	60;"	d
+DFU_DNLOAD	dfu.h	61;"	d
+DFU_FILE_H	dfu_file.h	3;"	d
+DFU_GETSTATE	dfu.h	65;"	d
+DFU_GETSTATUS	dfu.h	63;"	d
+DFU_H	dfu.h	22;"	d
+DFU_IFF_DFU	dfu.h	69;"	d
+DFU_LOAD_H	dfu_load.h	2;"	d
+DFU_QUIRKS_H	quirks.h	2;"	d
+DFU_STATUS_ERROR_ADDRESS	dfu.h	50;"	d
+DFU_STATUS_ERROR_CHECK_ERASED	dfu.h	47;"	d
+DFU_STATUS_ERROR_ERASE	dfu.h	46;"	d
+DFU_STATUS_ERROR_FILE	dfu.h	44;"	d
+DFU_STATUS_ERROR_FIRMWARE	dfu.h	52;"	d
+DFU_STATUS_ERROR_NOTDONE	dfu.h	51;"	d
+DFU_STATUS_ERROR_POR	dfu.h	55;"	d
+DFU_STATUS_ERROR_PROG	dfu.h	48;"	d
+DFU_STATUS_ERROR_STALLEDPKT	dfu.h	57;"	d
+DFU_STATUS_ERROR_TARGET	dfu.h	43;"	d
+DFU_STATUS_ERROR_UNKNOWN	dfu.h	56;"	d
+DFU_STATUS_ERROR_USBR	dfu.h	54;"	d
+DFU_STATUS_ERROR_VENDOR	dfu.h	53;"	d
+DFU_STATUS_ERROR_VERIFY	dfu.h	49;"	d
+DFU_STATUS_ERROR_WRITE	dfu.h	45;"	d
+DFU_STATUS_OK	dfu.h	42;"	d
+DFU_SUFFIX_LENGTH	dfu_file.c	33;"	d	file:
+DFU_TIMEOUT	dfuse.c	38;"	d	file:
+DFU_UPLOAD	dfu.h	62;"	d
+DFU_UTIL_H	dfu_util.h	2;"	d
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES = $(dfu_prefix_SOURCES) $(dfu_suffix_SOURCES) \\$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ERASE_PAGE	dfuse.h	/^enum dfuse_command { SET_ADDRESS, ERASE_PAGE, MASS_ERASE, READ_UNPROTECT };$/;"	e	enum:dfuse_command
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EX_IOERR	portable.h	60;"	d
+EX_OK	portable.h	57;"	d
+EX_SOFTWARE	portable.h	59;"	d
+EX_USAGE	portable.h	58;"	d
+GD32VF103_FLASH_BASE	quirks.c	70;"	d	file:
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS =  -lusb-1.0$/;"	m
+LINK	Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LMDFU_PREFIX	dfu_file.h	/^	LMDFU_PREFIX,$/;"	e	enum:prefix_type
+LMDFU_PREFIX_LENGTH	dfu_file.c	34;"	d	file:
+LPCDFU_PREFIX_LENGTH	dfu_file.c	35;"	d	file:
+LPCDFU_UNENCRYPTED_PREFIX	dfu_file.h	/^	LPCDFU_UNENCRYPTED_PREFIX$/;"	e	enum:prefix_type
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/missing makeinfo$/;"	m
+MASS_ERASE	dfuse.h	/^enum dfuse_command { SET_ADDRESS, ERASE_PAGE, MASS_ERASE, READ_UNPROTECT };$/;"	e	enum:dfuse_command
+MAX_DESC_STR_LEN	dfu_util.h	6;"	d
+MAX_PATH_LEN	dfu_util.c	390;"	d	file:
+MAYBE_PREFIX	dfu_file.h	/^	MAYBE_PREFIX$/;"	e	enum:prefix_req
+MAYBE_SUFFIX	dfu_file.h	/^	MAYBE_SUFFIX$/;"	e	enum:suffix_req
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MODE_ADD	prefix.c	/^	MODE_ADD,$/;"	e	enum:mode	file:
+MODE_ADD	suffix.c	/^	MODE_ADD,$/;"	e	enum:mode	file:
+MODE_CHECK	prefix.c	/^	MODE_CHECK$/;"	e	enum:mode	file:
+MODE_CHECK	suffix.c	/^	MODE_CHECK$/;"	e	enum:mode	file:
+MODE_DEL	prefix.c	/^	MODE_DEL,$/;"	e	enum:mode	file:
+MODE_DEL	suffix.c	/^	MODE_DEL,$/;"	e	enum:mode	file:
+MODE_DETACH	dfu_util.h	/^	MODE_DETACH,$/;"	e	enum:mode
+MODE_DOWNLOAD	dfu_util.h	/^	MODE_DOWNLOAD$/;"	e	enum:mode
+MODE_LIST	dfu_util.h	/^	MODE_LIST,$/;"	e	enum:mode
+MODE_NONE	dfu_util.h	/^	MODE_NONE,$/;"	e	enum:mode
+MODE_NONE	prefix.c	/^	MODE_NONE,$/;"	e	enum:mode	file:
+MODE_NONE	suffix.c	/^	MODE_NONE,$/;"	e	enum:mode	file:
+MODE_UPLOAD	dfu_util.h	/^	MODE_UPLOAD,$/;"	e	enum:mode
+MODE_VERSION	dfu_util.h	/^	MODE_VERSION,$/;"	e	enum:mode
+NEEDS_PREFIX	dfu_file.h	/^	NEEDS_PREFIX,$/;"	e	enum:prefix_req
+NEEDS_SUFFIX	dfu_file.h	/^	NEEDS_SUFFIX,$/;"	e	enum:suffix_req
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NO_PREFIX	dfu_file.h	/^	NO_PREFIX,$/;"	e	enum:prefix_req
+NO_SUFFIX	dfu_file.h	/^	NO_SUFFIX,$/;"	e	enum:suffix_req
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+O_BINARY	portable.h	64;"	d
+PACKAGE	Makefile	/^PACKAGE = dfu-util$/;"	m
+PACKAGE	portable.h	8;"	d
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = http:\/\/sourceforge.net\/p\/dfu-util\/tickets\/$/;"	m
+PACKAGE_BUGREPORT	portable.h	11;"	d
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = dfu-util$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = dfu-util 0.9$/;"	m
+PACKAGE_STRING	portable.h	10;"	d
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = dfu-util$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = http:\/\/dfu-util.sourceforge.net$/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 0.9$/;"	m
+PACKAGE_VERSION	portable.h	9;"	d
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PKG_CONFIG	Makefile	/^PKG_CONFIG = \/usr\/bin\/pkg-config$/;"	m
+PKG_CONFIG_LIBDIR	Makefile	/^PKG_CONFIG_LIBDIR = $/;"	m
+PKG_CONFIG_PATH	Makefile	/^PKG_CONFIG_PATH = $/;"	m
+PORTABLE_H	portable.h	3;"	d
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRODUCT_FREERUNNER_FIRST	quirks.h	15;"	d
+PRODUCT_FREERUNNER_LAST	quirks.h	16;"	d
+PRODUCT_GD32	quirks.h	24;"	d
+PRODUCT_MAPLE3	quirks.h	20;"	d
+PRODUCT_OPENPCD	quirks.h	18;"	d
+PRODUCT_OPENPICC	quirks.h	19;"	d
+PRODUCT_PXM40	quirks.h	21;"	d
+PRODUCT_PXM50	quirks.h	22;"	d
+PRODUCT_SIMTRACE	quirks.h	17;"	d
+PRODUCT_TRANSIT	quirks.h	23;"	d
+PROGRAMS	Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+PROGRESS_BAR_WIDTH	dfu_file.c	36;"	d	file:
+QUIRK_DFUSE_LAYOUT	quirks.h	29;"	d
+QUIRK_FORCE_DFU11	quirks.h	27;"	d
+QUIRK_POLLTIMEOUT	quirks.h	26;"	d
+QUIRK_UTF8_SERIAL	quirks.h	28;"	d
+READ_UNPROTECT	dfuse.h	/^enum dfuse_command { SET_ADDRESS, ERASE_PAGE, MASS_ERASE, READ_UNPROTECT };$/;"	e	enum:dfuse_command
+SET_ADDRESS	dfuse.h	/^enum dfuse_command { SET_ADDRESS, ERASE_PAGE, MASS_ERASE, READ_UNPROTECT };$/;"	e	enum:dfuse_command
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES = $(dfu_prefix_SOURCES) $(dfu_suffix_SOURCES) \\$/;"	m
+STATE_APP_DETACH	dfu.h	29;"	d
+STATE_APP_IDLE	dfu.h	28;"	d
+STATE_DFU_DOWNLOAD_BUSY	dfu.h	32;"	d
+STATE_DFU_DOWNLOAD_IDLE	dfu.h	33;"	d
+STATE_DFU_DOWNLOAD_SYNC	dfu.h	31;"	d
+STATE_DFU_ERROR	dfu.h	38;"	d
+STATE_DFU_IDLE	dfu.h	30;"	d
+STATE_DFU_MANIFEST	dfu.h	35;"	d
+STATE_DFU_MANIFEST_SYNC	dfu.h	34;"	d
+STATE_DFU_MANIFEST_WAIT_RESET	dfu.h	36;"	d
+STATE_DFU_UPLOAD_IDLE	dfu.h	37;"	d
+STDIN_CHUNK_SIZE	dfu_file.c	37;"	d	file:
+STRIP	Makefile	/^STRIP = $/;"	m
+USB_CFLAGS	Makefile	/^USB_CFLAGS = -I\/usr\/include\/libusb-1.0$/;"	m
+USB_DFU_CAN_DOWNLOAD	usb_dfu.h	38;"	d
+USB_DFU_CAN_UPLOAD	usb_dfu.h	39;"	d
+USB_DFU_H	usb_dfu.h	2;"	d
+USB_DFU_MANIFEST_TOL	usb_dfu.h	40;"	d
+USB_DFU_WILL_DETACH	usb_dfu.h	41;"	d
+USB_DT_DFU	usb_dfu.h	28;"	d
+USB_LIBS	Makefile	/^USB_LIBS = -lusb-1.0$/;"	m
+VENDOR_FIC	quirks.h	8;"	d
+VENDOR_GIGADEVICE	quirks.h	13;"	d
+VENDOR_LEAFLABS	quirks.h	10;"	d
+VENDOR_MIDIMAN	quirks.h	12;"	d
+VENDOR_OPENMOKO	quirks.h	7;"	d
+VENDOR_SIEMENS	quirks.h	11;"	d
+VENDOR_VOTI	quirks.h	9;"	d
+VERSION	Makefile	/^VERSION = 0.9$/;"	m
+ZERO_PREFIX	dfu_file.h	/^	ZERO_PREFIX,$/;"	e	enum:prefix_type
+abs_builddir	Makefile	/^abs_builddir = \/home\/hma\/thirdy_party\/dfu-util\/src$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/home\/hma\/thirdy_party\/dfu-util\/src$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/home\/hma\/thirdy_party\/dfu-util$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/home\/hma\/thirdy_party\/dfu-util$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+add_segment	dfuse_mem.c	/^int add_segment(struct memsegment **segment_list, struct memsegment segment)$/;"	f
+alt_name	dfu.h	/^    char *alt_name;$/;"	m	struct:dfu_if
+altsetting	dfu.h	/^    uint8_t altsetting;$/;"	m	struct:dfu_if
+am__DIST_COMMON	Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(top_srcdir)\/m4\/depcomp$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__installdirs	Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = { \\$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	Makefile	/^am__mv = mv -f$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__v_CCLD_	Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am_dfu_prefix_OBJECTS	Makefile	/^am_dfu_prefix_OBJECTS = prefix.$(OBJEXT) dfu_file.$(OBJEXT)$/;"	m
+am_dfu_suffix_OBJECTS	Makefile	/^am_dfu_suffix_OBJECTS = suffix.$(OBJEXT) dfu_file.$(OBJEXT)$/;"	m
+am_dfu_util_OBJECTS	Makefile	/^am_dfu_util_OBJECTS = main.$(OBJEXT) dfu_load.$(OBJEXT) \\$/;"	m
+bDescriptorType	usb_dfu.h	/^	uint8_t		bDescriptorType;$/;"	m	struct:usb_dfu_func_descriptor
+bLength	usb_dfu.h	/^	uint8_t		bLength;$/;"	m	struct:usb_dfu_func_descriptor
+bMaxPacketSize0	dfu.h	/^    uint8_t bMaxPacketSize0;$/;"	m	struct:dfu_if
+bState	dfu.h	/^    unsigned char bState;$/;"	m	struct:dfu_status
+bStatus	dfu.h	/^    unsigned char bStatus;$/;"	m	struct:dfu_status
+bcdDFU	dfu_file.h	/^    uint16_t bcdDFU;$/;"	m	struct:dfu_file
+bcdDFUVersion	usb_dfu.h	/^	uint16_t		bcdDFUVersion;$/;"	m	struct:usb_dfu_func_descriptor
+bcdDevice	dfu.h	/^    uint16_t bcdDevice;$/;"	m	struct:dfu_if
+bcdDevice	dfu_file.h	/^    uint16_t bcdDevice;$/;"	m	struct:dfu_file
+bin_PROGRAMS	Makefile	/^bin_PROGRAMS = dfu-util$(EXEEXT) dfu-suffix$(EXEEXT) \\$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bmAttributes	usb_dfu.h	/^	uint8_t		bmAttributes;$/;"	m	struct:usb_dfu_func_descriptor
+build_alias	Makefile	/^build_alias = $/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+busnum	dfu.h	/^    uint16_t busnum;$/;"	m	struct:dfu_if
+bwPollTimeout	dfu.h	/^    unsigned int  bwPollTimeout;$/;"	m	struct:dfu_status
+configuration	dfu.h	/^    uint8_t configuration;$/;"	m	struct:dfu_if
+crc32_byte	dfu_file.c	/^static uint32_t crc32_byte(uint32_t accum, uint8_t delta)$/;"	f	file:
+crc32_table	dfu_file.c	/^static const unsigned long crc32_table[] = {$/;"	v	file:
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/m4\/depcomp$/;"	m
+dev	dfu.h	/^    libusb_device *dev;$/;"	m	struct:dfu_if
+dev_handle	dfu.h	/^    libusb_device_handle *dev_handle;$/;"	m	struct:dfu_if
+devnum	dfu.h	/^    uint16_t devnum;$/;"	m	struct:dfu_if
+dfu_abort	dfu.c	/^int dfu_abort( libusb_device_handle *device,$/;"	f
+dfu_abort_to_idle	dfu.c	/^int dfu_abort_to_idle(struct dfu_if *dif)$/;"	f
+dfu_clear_status	dfu.c	/^int dfu_clear_status( libusb_device_handle *device,$/;"	f
+dfu_detach	dfu.c	/^int dfu_detach( libusb_device_handle *device,$/;"	f
+dfu_download	dfu.c	/^int dfu_download( libusb_device_handle *device,$/;"	f
+dfu_file	dfu_file.h	/^struct dfu_file {$/;"	s
+dfu_file_write_crc	dfu_file.c	/^uint32_t dfu_file_write_crc(int f, uint32_t crc, const void *buf, int size)$/;"	f
+dfu_get_state	dfu.c	/^int dfu_get_state( libusb_device_handle *device,$/;"	f
+dfu_get_status	dfu.c	/^int dfu_get_status( struct dfu_if *dif, struct dfu_status *status )$/;"	f
+dfu_if	dfu.h	/^struct dfu_if {$/;"	s
+dfu_load_file	dfu_file.c	/^void dfu_load_file(struct dfu_file *file, enum suffix_req check_suffix, enum prefix_req check_prefix)$/;"	f
+dfu_malloc	dfu_file.c	/^void *dfu_malloc(size_t size)$/;"	f
+dfu_prefix_LDADD	Makefile	/^dfu_prefix_LDADD = $(LDADD)$/;"	m
+dfu_prefix_OBJECTS	Makefile	/^dfu_prefix_OBJECTS = $(am_dfu_prefix_OBJECTS)$/;"	m
+dfu_prefix_SOURCES	Makefile	/^dfu_prefix_SOURCES = prefix.c \\$/;"	m
+dfu_progress_bar	dfu_file.c	/^void dfu_progress_bar(const char *desc, unsigned long long curr,$/;"	f
+dfu_root	main.c	/^struct dfu_if *dfu_root = NULL;$/;"	v	typeref:struct:dfu_if
+dfu_state_to_string	dfu.c	/^const char* dfu_state_to_string( int state )$/;"	f
+dfu_status	dfu.h	/^struct dfu_status {$/;"	s
+dfu_status_names	dfu.c	/^static const char *dfu_status_names[] = {$/;"	v	file:
+dfu_status_to_string	dfu.c	/^const char *dfu_status_to_string(int status)$/;"	f
+dfu_store_file	dfu_file.c	/^void dfu_store_file(struct dfu_file *file, int write_suffix, int write_prefix)$/;"	f
+dfu_suffix_LDADD	Makefile	/^dfu_suffix_LDADD = $(LDADD)$/;"	m
+dfu_suffix_OBJECTS	Makefile	/^dfu_suffix_OBJECTS = $(am_dfu_suffix_OBJECTS)$/;"	m
+dfu_suffix_SOURCES	Makefile	/^dfu_suffix_SOURCES = suffix.c \\$/;"	m
+dfu_timeout	dfu.c	/^static int dfu_timeout = 5000;  \/* 5 seconds - default *\/$/;"	v	file:
+dfu_upload	dfu.c	/^int dfu_upload( libusb_device_handle *device,$/;"	f
+dfu_util_LDADD	Makefile	/^dfu_util_LDADD = $(LDADD)$/;"	m
+dfu_util_OBJECTS	Makefile	/^dfu_util_OBJECTS = $(am_dfu_util_OBJECTS)$/;"	m
+dfu_util_SOURCES	Makefile	/^dfu_util_SOURCES = main.c \\$/;"	m
+dfuload_do_dnload	dfu_load.c	/^int dfuload_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file)$/;"	f
+dfuload_do_upload	dfu_load.c	/^int dfuload_do_upload(struct dfu_if *dif, int xfer_size,$/;"	f
+dfuse_address	dfuse.c	/^static unsigned int dfuse_address = 0;$/;"	v	file:
+dfuse_address_present	dfuse.c	/^static unsigned int dfuse_address_present = 0;$/;"	v	file:
+dfuse_command	dfuse.h	/^enum dfuse_command { SET_ADDRESS, ERASE_PAGE, MASS_ERASE, READ_UNPROTECT };$/;"	g
+dfuse_dnload_chunk	dfuse.c	/^int dfuse_dnload_chunk(struct dfu_if *dif, unsigned char *data, int size,$/;"	f
+dfuse_dnload_element	dfuse.c	/^int dfuse_dnload_element(struct dfu_if *dif, unsigned int dwElementAddress,$/;"	f
+dfuse_do_bin_dnload	dfuse.c	/^int dfuse_do_bin_dnload(struct dfu_if *dif, int xfer_size,$/;"	f
+dfuse_do_dfuse_dnload	dfuse.c	/^int dfuse_do_dfuse_dnload(struct dfu_if *dif, int xfer_size,$/;"	f
+dfuse_do_dnload	dfuse.c	/^int dfuse_do_dnload(struct dfu_if *dif, int xfer_size, struct dfu_file *file,$/;"	f
+dfuse_do_upload	dfuse.c	/^int dfuse_do_upload(struct dfu_if *dif, int xfer_size, int fd,$/;"	f
+dfuse_download	dfuse.c	/^int dfuse_download(struct dfu_if *dif, const unsigned short length,$/;"	f
+dfuse_force	dfuse.c	/^static int dfuse_force = 0;$/;"	v	file:
+dfuse_leave	dfuse.c	/^static int dfuse_leave = 0;$/;"	v	file:
+dfuse_length	dfuse.c	/^static unsigned int dfuse_length = 0;$/;"	v	file:
+dfuse_mass_erase	dfuse.c	/^static int dfuse_mass_erase = 0;$/;"	v	file:
+dfuse_memcpy	dfuse.c	/^dfuse_memcpy(unsigned char *dst, unsigned char **src, int *rem, int size)$/;"	f	file:
+dfuse_parse_options	dfuse.c	/^void dfuse_parse_options(const char *options)$/;"	f
+dfuse_special_command	dfuse.c	/^int dfuse_special_command(struct dfu_if *dif, unsigned int address,$/;"	f
+dfuse_unprotect	dfuse.c	/^static int dfuse_unprotect = 0;$/;"	v	file:
+dfuse_upload	dfuse.c	/^int dfuse_upload(struct dfu_if *dif, const unsigned short length,$/;"	f
+dfuse_will_reset	dfuse.c	/^static int dfuse_will_reset = 0;$/;"	v	file:
+disconnect_devices	dfu_util.c	/^void disconnect_devices(void)$/;"	f
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dwCRC	dfu_file.h	/^    uint32_t dwCRC;$/;"	m	struct:dfu_file
+end	dfuse_mem.h	/^	unsigned int end;$/;"	m	struct:memsegment
+err	portable.h	49;"	d
+errx	portable.h	43;"	d
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+find_descriptor	dfu_util.c	/^static int find_descriptor(const uint8_t *desc_list, int list_len,$/;"	f	file:
+find_segment	dfuse_mem.c	/^struct memsegment *find_segment(struct memsegment *segment_list,$/;"	f
+firmware	dfu_file.h	/^    uint8_t *firmware;$/;"	m	struct:dfu_file
+fixup_dfuse_layout	quirks.c	/^void fixup_dfuse_layout(struct dfu_if *dif, struct memsegment **segment_list)$/;"	f
+flags	dfu.h	/^    uint8_t flags;$/;"	m	struct:dfu_if
+free_segment_list	dfuse_mem.c	/^void free_segment_list(struct memsegment *segment_list)$/;"	f
+func_dfu	dfu.h	/^    struct usb_dfu_func_descriptor func_dfu;$/;"	m	struct:dfu_if	typeref:struct:dfu_if::usb_dfu_func_descriptor
+get_path	dfu_util.c	/^char *get_path(libusb_device *dev)$/;"	f
+get_quirks	quirks.c	/^uint16_t get_quirks(uint16_t vendor, uint16_t product, uint16_t bcdDevice)$/;"	f
+get_string_descriptor_ascii	dfu_util.c	/^static int get_string_descriptor_ascii(libusb_device_handle *devh,$/;"	f	file:
+get_utf8_string_descriptor	dfu_util.c	/^static int get_utf8_string_descriptor(libusb_device_handle *devh,$/;"	f	file:
+help	main.c	/^static void help(void)$/;"	f	file:
+help	prefix.c	/^static void help(void)$/;"	f	file:
+help	suffix.c	/^static void help(void)$/;"	f	file:
+host_alias	Makefile	/^host_alias = $/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+iString	dfu.h	/^    unsigned char iString;$/;"	m	struct:dfu_status
+idProduct	dfu_file.h	/^    uint16_t idProduct;$/;"	m	struct:dfu_file
+idVendor	dfu_file.h	/^    uint16_t idVendor;$/;"	m	struct:dfu_file
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/home\/hma\/thirdy_party\/dfu-util\/m4\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+interface	dfu.h	/^    uint8_t interface;$/;"	m	struct:dfu_if
+last_erased_page	dfuse.c	/^static unsigned int last_erased_page = 1; \/* non-aligned value, won't match *\/$/;"	v	file:
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+list_dfu_interfaces	dfu_util.c	/^void list_dfu_interfaces(void)$/;"	f
+lmdfu_address	dfu_file.h	/^    uint32_t lmdfu_address;$/;"	m	struct:dfu_file
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+main	prefix.c	/^int main(int argc, char **argv)$/;"	f
+main	suffix.c	/^int main(int argc, char **argv)$/;"	f
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+match_config_index	main.c	/^int match_config_index = -1;$/;"	v
+match_iface_alt_index	main.c	/^int match_iface_alt_index = -1;$/;"	v
+match_iface_alt_name	main.c	/^const char *match_iface_alt_name = NULL;$/;"	v
+match_iface_index	main.c	/^int match_iface_index = -1;$/;"	v
+match_path	main.c	/^char *match_path = NULL;$/;"	v
+match_product	main.c	/^int match_product = -1;$/;"	v
+match_product_dfu	main.c	/^int match_product_dfu = -1;$/;"	v
+match_serial	main.c	/^const char *match_serial = NULL;$/;"	v
+match_serial_dfu	main.c	/^const char *match_serial_dfu = NULL;$/;"	v
+match_vendor	main.c	/^int match_vendor = -1;$/;"	v
+match_vendor_dfu	main.c	/^int match_vendor_dfu = -1;$/;"	v
+mem_layout	dfuse.c	/^static struct memsegment *mem_layout;$/;"	v	typeref:struct:memsegment	file:
+memsegment	dfuse_mem.h	/^struct memsegment {$/;"	s
+memtype	dfuse_mem.h	/^	int memtype;$/;"	m	struct:memsegment
+milli_sleep	portable.h	21;"	d
+milli_sleep	portable.h	27;"	d
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mode	dfu_util.h	/^enum mode {$/;"	g
+mode	prefix.c	/^enum mode {$/;"	g	file:
+mode	suffix.c	/^enum mode {$/;"	g	file:
+name	dfu_file.h	/^    const char *name;$/;"	m	struct:dfu_file
+next	dfu.h	/^    struct dfu_if *next;$/;"	m	struct:dfu_if	typeref:struct:dfu_if::dfu_if
+next	dfuse_mem.h	/^	struct memsegment *next;$/;"	m	struct:memsegment	typeref:struct:memsegment::memsegment
+off_t	portable.h	68;"	d
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+opts	main.c	/^static struct option opts[] = {$/;"	v	typeref:struct:option	file:
+opts	prefix.c	/^static struct option opts[] = {$/;"	v	typeref:struct:option	file:
+opts	suffix.c	/^static struct option opts[] = {$/;"	v	typeref:struct:option	file:
+pagesize	dfuse_mem.h	/^	int pagesize;$/;"	m	struct:memsegment
+parse_match_value	main.c	/^static int parse_match_value(const char *str, int default_value)$/;"	f	file:
+parse_memory_layout	dfuse_mem.c	/^struct memsegment *parse_memory_layout(char *intf_desc)$/;"	f
+parse_number	main.c	/^static int parse_number(char *str, char *nmb)$/;"	f	file:
+parse_serial	main.c	/^static void parse_serial(char *str)$/;"	f	file:
+parse_vendprod	main.c	/^static void parse_vendprod(const char *str)$/;"	f	file:
+path_buf	dfu_util.c	/^char path_buf[MAX_PATH_LEN];$/;"	v
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/dfu-util$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/dfu-util$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/dfu-util$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/dfu-util$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	dfu_file.h	/^	int prefix;$/;"	m	struct:dfu_file::__anon1
+prefix_req	dfu_file.h	/^enum prefix_req {$/;"	g
+prefix_type	dfu_file.h	/^    uint32_t prefix_type;$/;"	m	struct:dfu_file
+prefix_type	dfu_file.h	/^enum prefix_type {$/;"	g
+print_dfu_if	dfu_util.c	/^void print_dfu_if(struct dfu_if *dfu_if)$/;"	f
+print_version	main.c	/^static void print_version(void)$/;"	f	file:
+print_version	prefix.c	/^static void print_version(void)$/;"	f	file:
+print_version	suffix.c	/^static void print_version(void)$/;"	f	file:
+probe_configuration	dfu_util.c	/^static void probe_configuration(libusb_device *dev, struct libusb_device_descriptor *desc)$/;"	f	file:
+probe_devices	dfu_util.c	/^void probe_devices(libusb_context *ctx)$/;"	f
+probe_prefix	dfu_file.c	/^static int probe_prefix(struct dfu_file *file)$/;"	f	file:
+product	dfu.h	/^    uint16_t product;$/;"	m	struct:dfu_if
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+quad2uint	dfuse.c	/^unsigned int quad2uint(unsigned char *p)$/;"	f
+quirks	dfu.h	/^    uint16_t quirks;$/;"	m	struct:dfu_if
+runstatedir	Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+serial_name	dfu.h	/^    char *serial_name;$/;"	m	struct:dfu_if
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+show_suffix_and_prefix	dfu_file.c	/^void show_suffix_and_prefix(struct dfu_file *file)$/;"	f
+size	dfu_file.h	/^    } size;$/;"	m	struct:dfu_file	typeref:struct:dfu_file::__anon1
+srcdir	Makefile	/^srcdir = .$/;"	m
+start	dfuse_mem.h	/^	unsigned int start;$/;"	m	struct:memsegment
+subdir	Makefile	/^subdir = src$/;"	m
+suffix	dfu_file.h	/^	int suffix;$/;"	m	struct:dfu_file::__anon1
+suffix_req	dfu_file.h	/^enum suffix_req {$/;"	g
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = ..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = ..$/;"	m
+top_srcdir	Makefile	/^top_srcdir = ..$/;"	m
+total	dfu_file.h	/^	int total;$/;"	m	struct:dfu_file::__anon1
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+usb_dfu_func_descriptor	usb_dfu.h	/^struct usb_dfu_func_descriptor {$/;"	s
+vendor	dfu.h	/^    uint16_t vendor;$/;"	m	struct:dfu_if
+verbose	main.c	/^int verbose = 0;$/;"	v
+verbose	prefix.c	/^int verbose;$/;"	v
+verbose	suffix.c	/^int verbose;$/;"	v
+wDetachTimeOut	usb_dfu.h	/^	uint16_t		wDetachTimeOut;$/;"	m	struct:usb_dfu_func_descriptor
+wTransferSize	usb_dfu.h	/^	uint16_t		wTransferSize;$/;"	m	struct:usb_dfu_func_descriptor
+warn	portable.h	46;"	d
+warnx	portable.h	40;"	d

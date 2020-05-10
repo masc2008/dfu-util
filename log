@@ -1,0 +1,20 @@
+Opening DFU capable USB device...
+ID 0b0e:097a
+Run-time device DFU version 0101
+Claiming USB DFU Interface...
+Setting Alternate Setting #0 ...
+Determining device status: state = dfuDNLOAD-IDLE, status = 0
+aborting previous incomplete transfer
+Determining device status: state = dfuIDLE, status = 0
+dfuIDLE, continuing
+DFU mode device DFU version 0101
+Device returned transfer size 1023
+Copying data from PC to DFU device
+Download        [=========================] 100%      1864254 bytes
+Download done.
+dfu-util: unable to read DFU status after completion
+dfu-util: can't detach
+Resetting USB to switch back to runtime mode
+
+
+
