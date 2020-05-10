@@ -24,6 +24,8 @@
 #include <libusb.h>
 #include "usb_dfu.h"
 
+#define LOG(fmt, ...) printf("%s:%d " fmt, __func__, __LINE__, ##__VA_ARGS__)
+
 /* DFU states */
 #define STATE_APP_IDLE                  0x00
 #define STATE_APP_DETACH                0x01

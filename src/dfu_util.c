@@ -153,6 +153,18 @@ static int get_string_descriptor_ascii(libusb_device_handle *devh,
 	return di;
 }
 
+static void
+hexdump(char *title, const unsigned char *buf, int len)
+{
+	LOG("%s\n", title);
+	for (int i = 0; i < len; i++) {
+		printf("%02x ", buf[i]);
+		if (((i % 16) == 0) && i)
+			printf("\n");
+	}
+	printf("\n");
+}
+
 static void probe_configuration(libusb_device *dev, struct libusb_device_descriptor *desc)
 {
 	struct usb_dfu_func_descriptor func_dfu;
@@ -187,9 +199,15 @@ static void probe_configuration(libusb_device *dev, struct libusb_device_descrip
 		 */
 		if (!cfg)
 			return;
-
+		if (desc->idVendor == 0x0b0e) {
+			LOG("cfg %02x, %p, %d\n", cfg->bLength,
+			    cfg->extra, cfg->extra_length);
+			hexdump("b0e cfg", cfg, sizeof(*cfg));
+			hexdump("b0e", cfg->extra, cfg->extra_length);
+		}
 		ret = find_descriptor(cfg->extra, cfg->extra_length,
 		    USB_DT_DFU, &func_dfu, sizeof(func_dfu));
+		LOG("find USB_DT_DFU %d\n", ret);
 		if (ret > -1)
 			goto found_dfu;
 
@@ -209,12 +227,14 @@ static void probe_configuration(libusb_device *dev, struct libusb_device_descrip
 
 				ret = find_descriptor(intf->extra, intf->extra_length, USB_DT_DFU,
 				      &func_dfu, sizeof(func_dfu));
+				LOG("find USB_DT_DFU %d\n", ret);
 				if (ret > -1)
 					goto found_dfu;
 
 				has_dfu = 1;
 			}
 		}
+		LOG("has_dfu %d\n", has_dfu);
 		if (has_dfu) {
 			/*
 			 * Finally try to retrieve it requesting the
@@ -225,6 +245,7 @@ static void probe_configuration(libusb_device *dev, struct libusb_device_descrip
 				ret = libusb_get_descriptor(devh, USB_DT_DFU, 0,
 				    (void *)&func_dfu, sizeof(func_dfu));
 				libusb_close(devh);
+				LOG("libusb_get_descriptor %d\n", ret);
 				if (ret > -1)
 					goto found_dfu;
 			}
@@ -240,6 +261,7 @@ static void probe_configuration(libusb_device *dev, struct libusb_device_descrip
 		continue;
 
 found_dfu:
+		LOG("func_dfu %d, %x\n", func_dfu.bLength, func_dfu.bcdDFUVersion);
 		if (func_dfu.bLength == 7) {
 			printf("Deducing device DFU version from functional descriptor "
 			    "length\n");
@@ -272,6 +294,9 @@ found_dfu:
 
 				intf = &uif->altsetting[alt_idx];
 
+				LOG("class %x, %x, %x\n", intf->bInterfaceClass,
+				    intf->bInterfaceSubClass,
+				    intf->bInterfaceProtocol);
 				if (intf->bInterfaceClass != 0xfe ||
 				    intf->bInterfaceSubClass != 1)
 					continue;
@@ -292,7 +317,7 @@ found_dfu:
 				 */
 				if (desc->idVendor == 0x0b0e && intf->bInterfaceProtocol == 0 && cfg->bNumInterfaces == 1)
 					dfu_mode = 1;
-
+				LOG("dfu_mode %x\n", dfu_mode);
 				if (dfu_mode &&
 				    match_iface_alt_index > -1 && match_iface_alt_index != intf->bAlternateSetting)
 					continue;
@@ -309,10 +334,12 @@ found_dfu:
 					}
 				}
 
+				LOG("\n");
 				if (libusb_open(dev, &devh)) {
 					warnx("Cannot open DFU device %04x:%04x", desc->idVendor, desc->idProduct);
 					break;
 				}
+				LOG("\n");
 				if (intf->iInterface != 0)
 					ret = get_string_descriptor_ascii(devh,
 					    intf->iInterface, (void *)alt_name, MAX_DESC_STR_LEN);
@@ -320,6 +347,7 @@ found_dfu:
 					ret = -1;
 				if (ret < 1)
 					strcpy(alt_name, "UNKNOWN");
+				LOG("\n");
 				if (desc->iSerialNumber != 0) {
 					if (quirks & QUIRK_UTF8_SERIAL) {
 						ret = get_utf8_string_descriptor(devh, desc->iSerialNumber,
@@ -337,10 +365,12 @@ found_dfu:
 					strcpy(serial_name, "UNKNOWN");
 				libusb_close(devh);
 
+				LOG("\n");
 				if (dfu_mode &&
 				    match_iface_alt_name != NULL && strcmp(alt_name, match_iface_alt_name))
 					continue;
 
+				LOG("\n");
 				if (dfu_mode) {
 					if (match_serial_dfu != NULL && strcmp(match_serial_dfu, serial_name))
 						continue;
@@ -377,7 +407,7 @@ found_dfu:
 					  libusb_cpu_to_le16(0x0110);
 				}
 				pdfu->bMaxPacketSize0 = desc->bMaxPacketSize0;
-
+				LOG("Set dfu %x\n", pdfu->product);
 				/* queue into list */
 				pdfu->next = dfu_root;
 				dfu_root = pdfu;
@@ -425,6 +455,7 @@ void probe_devices(libusb_context *ctx)
 			continue;
 		if (libusb_get_device_descriptor(dev, &desc))
 			continue;
+		LOG("desc %04x, %04x\n", desc.idVendor, desc.idProduct);
 		probe_configuration(dev, &desc);
 	}
 	libusb_free_device_list(list, 0);

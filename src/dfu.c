@@ -148,6 +148,7 @@ int dfu_get_status( struct dfu_if *dif, struct dfu_status *status )
           /* wLength       */ 6,
                               dfu_timeout );
 
+//printf("%s, %d, result %d\n", __func__, __LINE__, result);
     if( 6 == result ) {
         status->bStatus = buffer[0];
         if (dif->quirks & QUIRK_POLLTIMEOUT)
